@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Connect — Gimnasios, entrenadores y nutricionistas en un solo lugar</title>
+  <meta name="description" content="FitLife Connect conecta personas, entrenadores, nutricionistas y gimnasios en una sola plataforma.">
+
+  <!-- Tipografías: Archivo Black para títulos (peso e impacto), Inter para texto (legibilidad en móvil) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">FitLife<span>Connect</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#personas">Para ti</a>
+        <a href="#entrenadores">Entrenadores</a>
+        <a href="#nutricionistas">Nutricionistas</a>
+        <a href="#gimnasios">Gimnasios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- Botón hamburguesa: solo visible en móvil (ver media query) -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <h1>Un solo lugar para cuidar tu cuerpo, y para que te encuentren si tú cuidas el de otros</h1>
+        <p class="hero-sub">FitLife Connect reúne gimnasios, entrenadores personales, nutricionistas y centros de bienestar en una sola plataforma, sin saltar entre apps y redes sociales.</p>
+
+        <!-- Selector rápido por segmento: elemento distintivo que resume el propósito del caso -->
+        <div class="hero-picks">
+          <a href="#personas" class="pick pick-coral">Busco entrenador o gimnasio</a>
+          <a href="#entrenadores" class="pick pick-blue">Soy entrenador personal</a>
+          <a href="#nutricionistas" class="pick pick-purple">Soy nutricionista</a>
+          <a href="#gimnasios" class="pick pick-gold">Tengo un gimnasio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HU01: PERSONAS ===================== -->
+    <section class="hu-section" id="personas" aria-labelledby="personas-titulo">
+      <div class="container hu-grid">
+        <div class="hu-text">
+          <span class="eyebrow eyebrow-coral">Para personas</span>
+          <h2 id="personas-titulo">Encuentra el profesional o gimnasio ideal para ti</h2>
+          <p>Compara entrenadores, nutricionistas y gimnasios en un solo lugar, sin buscar en diez sitios distintos.</p>
+          <ul>
+            <li>Filtra por especialidad, ubicación y precio</li>
+            <li>Compara reseñas y planes antes de decidir</li>
+            <li>Contacta directamente, sin intermediarios</li>
+          </ul>
+          <a href="#contacto" class="btn btn-coral">Empezar a buscar</a>
+        </div>
+        <div class="hu-visual" aria-hidden="true">
+          <div class="visual-card visual-coral">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HU02: ENTRENADORES ===================== -->
+    <section class="hu-section hu-alt" id="entrenadores" aria-labelledby="entrenadores-titulo">
+      <div class="container hu-grid hu-grid-reverse">
+        <div class="hu-text">
+          <span class="eyebrow eyebrow-blue">Para entrenadores</span>
+          <h2 id="entrenadores-titulo">Haz crecer tu cartera de clientes</h2>
+          <p>Publica tu perfil profesional y deja que las personas interesadas en entrenamiento personalizado te encuentren.</p>
+          <ul>
+            <li>Perfil con tu especialidad, tarifas y horarios</li>
+            <li>Recibe solicitudes directamente en tu panel</li>
+            <li>Sin comisiones ocultas por cliente</li>
+          </ul>
+          <a href="#contacto" class="btn btn-blue">Publicar mi perfil</a>
+        </div>
+        <div class="hu-visual" aria-hidden="true">
+          <div class="visual-card visual-blue">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="4" width="14" height="17" rx="2"/>
+              <path d="M9 4V2h6v2"/>
+              <path d="M9 12h6M9 16h6"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HU03: NUTRICIONISTAS ===================== -->
+    <section class="hu-section" id="nutricionistas" aria-labelledby="nutricionistas-titulo">
+      <div class="container hu-grid">
+        <div class="hu-text">
+          <span class="eyebrow eyebrow-purple">Para nutricionistas</span>
+          <h2 id="nutricionistas-titulo">Ofrece asesorías personalizadas</h2>
+          <p>Muestra tus planes de nutrición y consultas a personas que buscan mejorar su alimentación junto a su entrenamiento.</p>
+          <ul>
+            <li>Publica tus servicios y modalidades, presencial u online</li>
+            <li>Recibe solicitudes de asesoría con un clic</li>
+            <li>Construye tu reputación con reseñas verificadas</li>
+          </ul>
+          <a href="#contacto" class="btn btn-purple">Ofrecer mis servicios</a>
+        </div>
+        <div class="hu-visual" aria-hidden="true">
+          <div class="visual-card visual-purple">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 20c8 0 16-8 16-16-8 0-16 8-16 16z"/>
+              <path d="M4 20c4-4 8-8 12-12"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HU04: GIMNASIOS ===================== -->
+    <section class="hu-section hu-alt" id="gimnasios" aria-labelledby="gimnasios-titulo">
+      <div class="container hu-grid hu-grid-reverse">
+        <div class="hu-text">
+          <span class="eyebrow eyebrow-gold">Para gimnasios</span>
+          <h2 id="gimnasios-titulo">Aumenta la visibilidad de tu centro</h2>
+          <p>Registra tu gimnasio o centro deportivo y llega a personas que buscan activamente un lugar para entrenar.</p>
+          <ul>
+            <li>Ficha con servicios, horarios y ubicación</li>
+            <li>Aparece en las búsquedas por zona</li>
+            <li>Recibe contactos de nuevos usuarios interesados</li>
+          </ul>
+          <a href="#contacto" class="btn btn-gold">Registrar mi centro</a>
+        </div>
+        <div class="hu-visual" aria-hidden="true">
+          <div class="visual-card visual-gold">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="3" width="16" height="18"/>
+              <path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contact-section" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container contact-inner">
+        <h2 id="contacto-titulo">Cuéntanos qué necesitas</h2>
+        <p>Completa el formulario y te contactamos según tu perfil.</p>
+
+        <!-- novalidate: dejamos que nuestro JS controle los mensajes de error -->
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required minlength="2" autocomplete="name">
+            <span class="error" id="error-nombre"></span>
+          </div>
+
+          <div class="field">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required autocomplete="email">
+            <span class="error" id="error-correo"></span>
+          </div>
+
+          <div class="field">
+            <label for="perfil">Soy...</label>
+            <select id="perfil" name="perfil" required>
+              <option value="">Selecciona una opción</option>
+              <option value="persona">Persona que busca servicios</option>
+              <option value="entrenador">Entrenador personal</option>
+              <option value="nutricionista">Nutricionista</option>
+              <option value="gimnasio">Gimnasio o centro deportivo</option>
+            </select>
+            <span class="error" id="error-perfil"></span>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required minlength="10"></textarea>
+            <span class="error" id="error-mensaje"></span>
+          </div>
+
+          <button type="submit" class="btn btn-coral">Enviar</button>
+
+          <!-- aria-live: el lector de pantalla anuncia el mensaje sin recargar la página -->
+          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 FitLife Connect</p>
+      <nav class="footer-nav" aria-label="Navegación de pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
